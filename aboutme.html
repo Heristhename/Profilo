@@ -1,45 +1,70 @@
 <html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/w3css/3/w3.css">
+<head>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("img_girl.jpg");
+
+    /* Full height */
+    height: 50%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+</head>
 <body>
 
-<!-- Navigation -->
-<nav class="w3-bar w3-black">
-  <a href="#home" class="w3-button w3-bar-item">Home</a>
-  <a href="#band" class="w3-button w3-bar-item">Band</a>
-  <a href="#tour" class="w3-button w3-bar-item">Tour</a>
-  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
-</nav>
+<div class="bg"></div>
 
-<!-- Slide Show -->
-<section>
-  <img class="mySlides" src="img_band_la.jpg"
-  style="width:100%">
-  <img class="mySlides" src="img_band_ny.jpg"
-  style="width:100%">
-  <img class="mySlides" src="img_band_chicago.jpg"
-  style="width:100%">
-</section>
-
-<script>
-// Automatic Slideshow - change image every 3 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 3000);
-}
-</script>
+<p>This example creates a half page background image. Try to resize the browser window to see how it always will cover 50% of the screen, and that it scales nicely on all screen sizes.</p>
 
 </body>
 </html>
 
+
+
+
+
+<html>
+<head>
+<style>
+body {
+    background: #555;
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="content">
+  <h1>This page is horizontally centered on screens that are wider than 500 pixels.</h1>
+  <h1>Resize the browser window to see the effect.</h1>
+  <p>This page is always centered on screens that are wider than 500px. On screens that are less than 
+  500px wide, it will span the whole of the page.</p>
+  <p>Content inside this container is centered horizontally.</p>
+  <p>Content inside this container is centered horizontally.</p>
+  <p>Content inside this container is centered horizontally.</p>
+  <p>Content inside this container is centered horizontally.</p>
+  <p>Content inside this container is centered horizontally.</p>
+  <p>Content inside this container is centered horizontally.</p>
+  <p>Content inside this container is centered horizontally.</p>
+  <p>Content inside this container is centered horizontally.</p>
+  <p>Content inside this container is centered horizontally.</p>
+</div>
+
+</body>
+</html>
